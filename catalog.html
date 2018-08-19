@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <p class="header-logo">
-      <a href="index.html">Device</a>
+      <a href="index.html" aria-label="Переход на главную страницу">Device</a>
     </p>
     <nav class="main-navigation">
       <div class="search">
@@ -133,17 +133,106 @@
       
     </section>
     
+    <section class="sorting">
+      <h2>Сортировка:</h2>
+       <ul class="sorting-list">
+        <li class="sorting-item sorting-item-current">
+          <a href="#">По цене</a>
+        </li>
+        <li class="sorting-item">
+          <a href="#">По типу</a>
+        </li>
+        <li class="sorting-item">
+          <a href="#">По популярности</a>
+        </li>
+        <li class="sorting-item sorting-up">
+          <a href="#">
+            <svg></svg>
+          </a>
+        </li>
+        <li class="sorting-item sorting-item-current sorting-down">
+          <a href="#">
+            <svg></svg>
+          </a>
+        </li>
+      </ul>
+    </section>
     
+    <section class="results">
+      <h2 class="visually-hidden">Результат поиска:</h2>
+      <article class="catalog-item">
+        <p class="catalog-image">
+          <img src="" alt="Изображение товара: любительская селфи-палка">
+        </p>
+        <p class="catalog-description">
+          Любительская селфи-палка
+        </p>
+        <p class="catalog-price">
+          500 руб.
+        </p>
+      </article>
+      
+      <article class="catalog-item">
+        <p class="catalog-image">
+          <img src="" alt="Изображение товара: профессиональная селфи-палка">
+        </p>
+        <p class="catalog-description">
+          Профессиональная селфи-палка
+        </p>
+        <p class="catalog-price">
+          1 500 руб.
+        </p>
+      </article>
+      
+      <article class="catalog-item">
+        <p class="catalog-image">
+          <img src="" alt="Изображение товара: непотопляемая селфи-палка">
+        </p>
+        <p class="catalog-description">
+          Непотопляемая селфи-палка
+        </p>
+        <p class="catalog-price">
+          2 500 руб.
+        </p>
+      </article>
+      
+      <article class="catalog-item">
+        <p class="catalog-image">
+          <img src="" alt="Изображение товара: селфи-палка следуй за мной">
+        </p>
+        <p class="catalog-description">
+          Селфи-палка "Следуй за мной"
+        </p>
+        <p class="catalog-price">
+          4 900 руб.
+        </p>
+      </article>
+    </section>
     
-    
-    
+    <ul class="pagination-list">
+      <li class="pagination-item pagination-prev">
+        <a aria-label="Назад на предыдущую страницу">Назад</a>
+      </li>
+      <li class="pagination-item pagination-item-current">
+        <a aria-label="Первая страница">1</a>
+      </li>
+      <li class="pagination-item">
+        <a href="#" aria-label="Вторая страница">2</a>
+      </li>
+      <li class="pagination-item">
+        <a href="#" aria-label="Третья страница">3</a>
+      </li>
+      <li class="pagination-item pagination-next">
+        <a href="#" aria-label="Вперед на следующую страницу">Вперед</a>
+      </li>
+    </ul>
     
   </main>
   
   <footer class="page-footer">
     <div class="footer-top">
       <p class="header-logo">
-        <a>Device</a>
+        <a href="index.html" aria-label="Переход на главную страницу">Device</a>
       </p>
       <ul class="user-navigation">
         <li>
