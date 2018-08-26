@@ -25,73 +25,267 @@ ul {
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
   font-weight: 300;
+  color: #464646;
+  background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  clip: rect(0, 0, 0, 0);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*header start*/
+.page-header {
+  position: relative;
+
+  margin: 0;
+  margin-top: 40px;
+  padding: 50px 60px 120px 60px;
+
+  background-color: #f7e296;
+  color: #000;
+}
+
+.page-header a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header-logo {
+  margin: 0;
+  margin-top: -68px;
+  margin-bottom: 25px;
+}
+
+.main-navigation-top {
+  display: flex;
+
+  margin-bottom: 25px;
+}
+
+.search {
+  width: 540px;
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-navigation {
+  display: flex;
+  justify-content: space-between;
+
+  width: 220px;
+
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.site-navigation {
+  display: flex;
+
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation-title {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.site-navigation li:not(:last-of-type) {
+  margin-right: 35px;
+}
+
+.site-navigation li:first-of-type {
+  width: 505px;
+}
+
+.site-navigation li:last-of-type {
+  margin-left: auto;
+}
+
+.sub-nav {
+  display: none;
+
+  position: absolute;
+
+  width: 610px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation li:first-of-type:hover .sub-nav,
+.site-navigation li:first-of-type:focus .sub-nav {
+  display: block;
+}
+
+.sub-nav ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.header-bar {
+  position: absolute;
+  bottom: 50px;
+  right: 460px;
+
+  width: 100px;
+  height: 7px;
+
+  background-color: #fff;
+}
+/*header end*/
 
 
 
-
+/*promo-slider start*/
 .promo-slider {
   position: relative;
 }
 
-.promo-slider input[name="switch"] {
+input[name="toggle"] {
   display: none;
 }
 
-.switch {
+.slider-2,
+.slider-3 {
+  display: none;
+}
+
+.slide-controls {
   position: absolute;
-  left: 0;
-  bottom: -40px;
-  text-align: center;
-  width: 100%;
+  top: 554px;
+  right: 437px;
 }
 
-.switch label {
+.slide-controls label {
   display: inline-block;
-  width: 8px;
-  height: 8px;
-  cursor: pointer;
-  margin: 0 3px;
+  width: 10px;
+  height: 10px;
+  margin-right: 17px;
+
+  vertical-align: top;
+  background-color: transparent;
+  border: 1px solid black;
   border-radius: 50%;
-  border: 5px solid #2f363c;
-  background-color: #738290;
+  cursor: pointer;
 }
 
-#btn1:checked~.switch label[for="btn1"] {
+#btn1:checked~.slide-controls label[for="btn1"] {
   background-color: white;
 }
 
-#btn2:checked~.switch label[for="btn2"] {
+#btn2:checked~.slide-controls label[for="btn2"] {
   background-color: white;
 }
 
-#btn3:checked~.switch label[for="btn3"] {
+#btn3:checked~.slide-controls label[for="btn3"] {
   background-color: white;
 }
+/*promo-slider end*/
 
-.slider-inner {
-  overflow: hidden;
+/*product start*/
+.product-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-bottom: 185px;
+  padding: 0;
 }
 
-.slides {
-  width: 300%;
+.product-item {
+  width: 160px;
 }
 
-.slider-item {
-  display: 100%;
+.product-item a {
   display: inline-block;
+
+  color: #000;
+  text-decoration: none;
 }
 
-#btn1:checked~slider-inner slides {
-  transform: translate(0);
+.product-image {
+  width: 160px;
+  min-height: 160px;
+  margin-bottom: 35px;
+  margin-top: 0;
+
+  background-color: #f7e296;
+  text-align: center;
+  vertical-align: middle;
 }
 
-#btn2:checked~.slider-inner .slides {
-  transform: translate(-680px);
+.product-description {
+  margin: 0;
+
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+}
+/*product end*/
+
+/*services start*/
+.services {
+  display: flex;
+
+  background-color: #e5e5e5;
 }
 
-#btn3:checked~.slider-inner .slides {
-  transform: translate(-1360px);
+.services-list {
+  width: 290px;
+  margin-right: 120px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*services end*/
+
+
+
+
+
+
