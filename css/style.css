@@ -268,24 +268,229 @@ input[name="toggle"] {
 
 .services-list {
   width: 290px;
+  margin: 0;
+  padding: 0;
   margin-right: 120px;
 }
 
 
 
-
-
-
-
-
-
-
-
-
 /*services end*/
 
+/*brands start*/
+.brands-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 90px;
+  padding-bottom: 50px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-item img {
+  opacity: 0.1;
+}
+
+.brand-item img:hover {
+  opacity: 1;
+}
+
+/*brands end*/
+
+/*about-us start*/
+.about-and-contacts {
+  padding-bottom: 90px;
+}
+
+.about-and-contacts .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-and-contacts h2 {
+  font-family: Gilroy;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 900;
+
+  color: #000;
+}
+
+.about-and-contacts p {
+  color: #000;
+}
+
+.about-us {
+  width: 600px;
+}
+
+.about-us p {
+  width: 470px;
+}
+
+.about-us p:last-of-type {
+  margin-bottom: 45px;
+}
+
+.logistic-list {
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 900;
+
+  color: #000;
+  list-style-type: circle;
+}
+
+.logistic-item {
+  padding-left: 50px;
+}
+
+.about-us-link {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  background-color: #f0c52e;
+}
+
+.contacts p:first-of-type {
+  margin-bottom: 25px;
+}
+.contacts {
+  width: 600px;
+}
+
+.map-image {
+  margin-bottom: 63px;
+}
+
+.contacts-link {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  background-color: #f0c52e;
+  border: none;
+  cursor: pointer;
+}
+/*about-us end*/
+
+/*page-footer start*/
+.page-footer {
+  padding-top: 65px;
+  padding-bottom: 65px;
+
+  background-color: #464646;
+  color: #fff;
+}
+
+.page-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-top {
+  display: flex;
+}
+
+.footer-logo {
+  margin-right: auto;
+}
+
+.footer-catalog-navigation {
+  display: flex;
+}
+
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 65px;
+}
+
+.footer-middle p {
+  margin: 0;
+}
+
+.footer-services-list {
+  width: 440px;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-around;
+
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-block,
+.footer-company-logo {
+  width: 80px;
+}
+
+.footer-block {
+  position: relative;
+}
+
+.footer-block::after {
+  content: "";
+
+  position: absolute;
+  top: 20px;
+  left: 0px;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #ffc600;
+}
+
+.social-list {
+  width: 160px;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-company-logo {
+  margin: 0;
+}
+/*page-footer end*/
+
+/*modal start*/
+.modal {
+  display: none;
+}
 
 
-
-
+/*modal end*/
 
